@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css"> <!-- Custom contact page styles -->
 </head>
 <body>
     <header>
@@ -18,27 +19,27 @@
         </nav>
     </header>
 
-    <section>
+    <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <!-- Form link, using formspree as the service-->
-            <form id="contact-form" action="https://formspree.io/f/myyrpenz" method="POST">
-                <input type="hidden" name="_subject" value="New contact form submission"> <!-- Specify subject for the email -->
-                <input type="email" name="_replyto" style="display:none"> <!-- Hidden field to include sender's email for reply -->
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch with me. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            </div>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contact-form" action="https://formspree.io/f/myyrpenz" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -48,5 +49,4 @@
         </div>
     </footer>
 </body>
-
 </html>
