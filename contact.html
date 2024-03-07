@@ -21,7 +21,9 @@
     <section>
         <div class="container">
             <h2>Contact</h2>
-            <form id="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/myyrpenz" method="POST">
+                <input type="hidden" name="_subject" value="New contact form submission"> <!-- Specify subject for the email -->
+                <input type="email" name="_replyto" style="display:none"> <!-- Hidden field to include sender's email for reply -->
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -45,4 +47,5 @@
         </div>
     </footer>
 </body>
+
 </html>
