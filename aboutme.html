@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <title>test</title>
+        <link rel="stylesheet" href="aboutme.css">
+    </head>
 <body>
-    <header>
-        <nav>
+    <div class="banner">
+        <div class="navbar">
+            <img src="Screen Shot 2024-03-08 at 1.21.38 PM.png" class="logo">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section>
-        <div class="container">
-            <h2>About Me</h2>
-            <p>This is where you can write about yourself, your skills, experiences, etc.</p>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; DivyaPatel.com</p>
+        <div class="content">
+            <h1>ABOUT ME</h1>
+            <p><b>Hi, My Name Is Divya!</b><br>
+            <b>Welcome to my portfolio website.</b>
+        <br>Click About Me to learn more about this site or click Projects
+    to check out some of my work. </p>
         </div>
-    </footer>
+    
+
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.body.classList.add("loaded");
+        };
+    </script>
 </body>
 </html>
