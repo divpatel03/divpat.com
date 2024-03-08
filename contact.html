@@ -4,49 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact.css"> <!-- Custom contact page styles -->
 </head>
 <body>
-    <header>
-        <nav>
+    <div class="banner">
+        <div class="navbar">
+            <img src="Divya Patel (1).png" class="logo">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="contact">
-        <div class="container">
-            <div class="contact-info">
-                <h2>Contact Me</h2>
-                <p>Feel free to get in touch with me. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-            </div>
-            <div class="contact-form">
-                <h2>Send a Message</h2>
-                <form id="contact-form" action="https://formspree.io/f/myyrpenz" method="POST">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; DivyaPatel.com</p>
+        <div class="content">
+            <h1>CONTACT ME</h1>
+            <p><b>Use the form below to contact me.</b></p>
+            <form id="contact-form" action="https://formspree.io/f/myyrpenz" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
