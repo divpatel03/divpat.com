@@ -1,16 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.banner{
-    width:100%;
-    height: 100vh;
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/IMG_9132.jpg);
     background-size: cover;
     background-position: center;
 }
-.navbar{
+
+.navbar {
     width: 85%;
     margin: auto;
     padding: 35px 0;
@@ -18,27 +25,27 @@
     align-items: center;
     justify-content: space-between;
 }
-.logo{
-    width:120px;
+
+.logo {
+    width: 120px;
     cursor: pointer;
 }
 
-
-.navbar ul li{
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
-    position:relative;
+    position: relative;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
 }
 
-.navbar ul li::after{
-    content:'';
+.navbar ul li::after {
+    content: '';
     height: 3px;
     width: 0;
     background: #fff;
@@ -48,18 +55,19 @@
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after{
+.navbar ul li:hover::after {
     width: 100%;
 }
-.content{
-    width:100%;
+
+.content {
+    width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color:#fff;
-    opacity: 0; /* initially hidden */
-    animation: fadeIn 3s ease forwards; /* fade-in animation with 3 seconds duration */
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -72,43 +80,23 @@
 }
 
 .loaded .content {
-    opacity: 1; /* reveal content when loaded class is added */
+    opacity: 1;
 }
 
-
-.content h1{
-   font-size:70px;
-   margin-top: 80px;
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
 }
-.content p{
+
+.content p {
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
 }
 
-
-.navbar,
-.logo {
-    opacity: 0; /* initially hidden */
-    animation: fadeIn 3s ease forwards; /* fade-in animation with 3 seconds duration */
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.loaded .navbar,
-.loaded .logo {
-    opacity: 1; /* reveal elements when loaded class is added */
-}
 .hero{
-    width:100%;
-    height: 120vh;
+    width: 99%;
+    height: 110vh;
     display:flex;
     align-items: center;
     justify-content: center;
