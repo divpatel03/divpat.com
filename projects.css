@@ -1,137 +1,108 @@
-/* Base setup with CSS variables */
-:root {
-    --primary-color: #007bff; /* Primary theme color */
-    --text-color: #333; /* Main text color */
-    --background-color: #f8f8f8; /* Main background color */
-    --header-footer-bg: #333; /* Header and footer background color */
-    --hover-effect: #555; /* Hover effect color */
-    --font-primary: 'Poppins', sans-serif; /* Primary font */
-    --transition-speed: 0.3s; /* Transition speed for hover effects */
-}
-
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li, form, button {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: sans-serif;
 }
-
-body {
-    font-family: var(--font-primary);
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
+.banner{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/IMG_9132.jpg);
+    background-size: cover;
+    background-position: center;
 }
-
-/* Sticky header with transparency */
-header {
-    background-color: rgba(51, 51, 51, 0.9);
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color var(--transition-speed) ease;
-}
-
-nav ul li a:hover {
-    background-color: var(--hover-effect);
-}
-
-/* Container & Responsive Grid Layout */
-.container {
-    max-width: 1200px;
-    margin: 100px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-section {
-    padding: 50px 0;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-/* Project cards with flexbox */
-.project {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-}
-
-/* Footer and Button Styles */
-footer {
-    background-color: var(--header-footer-bg);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-button {
-    background-color: var(--header-footer-bg);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+.logo{
+    width:120px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color var(--transition-speed) ease, transform 0.2s ease;
 }
 
-button:hover {
-    background-color: var(--hover-effect);
-    transform: scale(1.05);
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
 }
 
-/* Responsive Navigation: Add JavaScript for toggling on smaller screens */
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
 
-/* Media Queries for additional responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
 
-    nav ul li {
-        margin: 10px 0;
-    }
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+    opacity: 0; /* initially hidden */
+    animation: fadeIn 3s ease forwards; /* fade-in animation with 3 seconds duration */
+}
 
-    .container {
-        grid-template-columns: 1fr;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loaded .content {
+    opacity: 1; /* reveal content when loaded class is added */
+}
+
+
+.content h1{
+   font-size:70px;
+   margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+.navbar,
+.logo {
+    opacity: 0; /* initially hidden */
+    animation: fadeIn 3s ease forwards; /* fade-in animation with 3 seconds duration */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loaded .navbar,
+.loaded .logo {
+    opacity: 1; /* reveal elements when loaded class is added */
 }
