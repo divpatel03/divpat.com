@@ -62,7 +62,7 @@ html, body {
 .content {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
@@ -96,7 +96,7 @@ html, body {
 
 .hero{
     width: 99%;
-    height: 110vh;
+    height: 105vh;
     display:flex;
     align-items: center;
     justify-content: center;
