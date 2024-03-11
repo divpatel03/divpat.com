@@ -62,7 +62,7 @@ html, body {
 .content {
     width: 100%;
     position: absolute;
-    top: 39%;
+    top: 37%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
@@ -96,13 +96,13 @@ html, body {
 
 .hero{
     width: 99%;
-    height: 90vh;
+    height: 85vh;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 .form-group{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 input, textarea{
     width:100%;
