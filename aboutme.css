@@ -54,7 +54,7 @@
 .content{
     width:100%;
     position: absolute;
-    top: 25%;
+    top: 40%;
     right: -20%;
     transform: translateY(-50%);
     text-align: center;
@@ -110,7 +110,7 @@
 
 .image{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 10%;
     transform: translateY(-50%);
     text-align: center;
