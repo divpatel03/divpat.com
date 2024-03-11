@@ -54,7 +54,8 @@
 .content{
     width:100%;
     position: absolute;
-    top: 50%;
+    top: 20%;
+    right: -20%;
     transform: translateY(-50%);
     text-align: center;
     color:#fff;
@@ -105,4 +106,15 @@
 .loaded .navbar,
 .loaded .logo {
     opacity: 1; /* reveal elements when loaded class is added */
+}
+
+.image{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+    opacity: 0; /* initially hidden */
+    animation: fadeIn 3s ease forwards; /* fade-in animation with 3 seconds duration */
 }
