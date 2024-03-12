@@ -107,14 +107,3 @@
 .loaded .logo {
     opacity: 1; /* reveal elements when loaded class is added */
 }
-
-.image{
-    position: absolute;
-    top: 55%;
-    left: 10%;
-    transform: translateY(-50%);
-    text-align: center;
-    color:#fff;
-    opacity: 0; /* initially hidden */
-    animation: fadeIn 3s ease forwards; /* fade-in animation with 3 seconds duration */
-}
