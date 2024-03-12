@@ -54,8 +54,7 @@
 .content{
     width:100%;
     position: absolute;
-    top: 40%;
-    right: -20%;
+    top: 42%;
     transform: translateY(-50%);
     text-align: center;
     color:#fff;
