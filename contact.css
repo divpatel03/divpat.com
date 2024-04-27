@@ -96,10 +96,11 @@ html, body {
 
 .hero{
     width: 99%;
-    height: 85vh;
+    height: 90vh;
     display:flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 3s ease forwards; 
 }
 .form-group{
     margin-bottom: 25px;
