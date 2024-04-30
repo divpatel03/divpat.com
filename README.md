@@ -1,6 +1,6 @@
 Website: divpat.com
 
-The site was developed using HTML, CSS, and JS by Divya Patel
+HTML/CSS/JS Personal Portfolio Website
 
 Deployed using Amazon AWS (S3, Route 53, and Cloudfront)
 
